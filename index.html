@@ -1,8 +1,18 @@
 <!DOCTYPE>
 <html>
   <head>
+    <meta charset="utf-8"/>
+    <title>Angular-101</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <p>Hello Coursera!</p>
+  <body ng-app="LunchCheck">
+    <div ng-controller="LunchCheckController">
+      <p>Hello Coursera!</p>
+      <input ng-model="food" type="text"/>
+      <button ng-click="check()">Check If Too Much</button>
+      <p>{{message}}</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src='app.js'></script>
   </body>
 </html>
